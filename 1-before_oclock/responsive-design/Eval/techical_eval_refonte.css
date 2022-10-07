@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #c06170;
+  color: black;
+  min-width: 250px;
+  line-height: 2.5;
+}
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: double black 4mm;
+}
+.navbar header {
+  font-size: x-large;
+  margin: 10px;
+}
+.navbar ul {
+  height: 90%;
+  padding: 0%;
+  overflow: auto hidden;
+}
+.navbar li {
+  border-top: 1px solid black;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  font-size: large;
+}
+.navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main {
+  position: absolute;
+  margin-left: 310px;
+  padding: 30px;
+  margin-bottom: 100em;
+}
+.main header {
+  text-align: center;
+  font-size: 3em;
+}
+
+.main article {
+  margin-left: 25px;
+  font-size: 2em;
+}
+.code {
+  background-color: #cad6e5;
+  border-left: black solid 1em;
+  line-height: 1.2;
+}
+.literals {
+  display: inline-block;
+  list-style: square;
+}
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr:after {
+  background: #c06170;
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  top: -45px;
+  font-size: xx-large;
+}
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}

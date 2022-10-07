@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="techical_eval_refonte.css">
+    <title>Ruby Technical Documentation</title>
+  </head>
+  <body>
+      <nav id="navbar" class="navbar">
+          <header>Documentation Ruby</header>
+          <ul>
+              <li>
+                  <a class="nav-link" href="#Introduction">Introduction</a>
+                </li>
+              <li>
+                  <a class="nav-link" href="#Installer_Ruby">Installer Ruby</a>
+                </li>
+              <li>
+                  <a class="nav-link" href="#Interactive_Ruby">Interactive Ruby</a>
+                </li>
+               <li>
+                    <a class="nav-link" href="#Les_types_d'objets_en_Ruby">Les types d'objets en Ruby</a>
+                </li>
+              <li>
+                  <a class="nav-link" href="#Changer_pour_Ruby">Changer pour Ruby</a>
+                </li>
+                
+              <li>
+                  <a class="nav-link" href="#Quelques_références">Quelques références</a>
+                </li>
+          </ul>
+      </nav>
+      <main id="main-doc" class="main">
+          <section class="main-section" id="Introduction">
+              <header>Introduction</header>
+              <article>
+                  <p>Ruby est un langage de programation générique et open-source,
+                       orienté objet.<br> Sa conception (alpha en 1994) a été inspirée par les langages
+                       Smalltalk, Eiffel,Ada et Lisp ainsi que le Perl dont il emprunte
+                       la bibliothèque de classe.</p>
+              </article>
+          </section>
+          <br>
+          <hr>
+          <section class="main-section" id="Installer_Ruby">
+              <header>Installer Ruby</header>
+              <article>
+                  <p>Afin d'installer ruby sous Archlinux, vous pouvez passer par votre gestionnaire
+                      paquets.
+                      <p class="code"><code>$ sudo pacman -S ruby</code></p>
+                      Vous pouvez également le construire  depuis la source. <br> Après avoir téléchargé et extrait le code source, lancez: 
+                  </p>
+                  <p class="code"><code>$ ./configure <br>
+                           $ make <br>
+                           $sudo make install <br>
+                  </code></p>
+                  
+                  <p>Pour l'installer sous Windows, un projet intéressant est le 
+                      <a href="http://rubyinstaller.org/">RubyInstaller</a> qui installera les prérequis ainsi qu'un
+                    environnement de développement.</p>
+              </article>
+          </section>
+          <br>
+          <hr>
+          <section class="main-section" id="Interactive_Ruby">
+            <header>Interactive Ruby</header>
+            <article>
+                <p>Interactive Ruby, IRB en court, permet d'exectuer des programmes en ruby depuis la console. L'un des premiers 
+                    exemples est la calculatrice.
+                </p>
+                <p>
+                    on commence par appeler IRB.
+                   <p class="code"> <code>user@pc:~$ irb </code></p>
+                    Puis on peut calculer.
+                    <p class="code"><code>irb(main):> 2+5 <br>
+                        => 7
+                    </code></p>
+                </p>
+                <p>De cette façon, IRB permet de tester son code assez rapidement.
+                    Cependant, par défaut IRB ne conserve pas l'historique des commandes, empechant ainsi l'execution de codes à  variables.
+                </p>
+            </article>
+          </section>
+          <br>
+          <hr>
+          <section class="main-section" id="Les_types_d'objets_en_Ruby">
+            <header>Les types d'objets en Ruby</header>
+            <article>
+                <p>Chaque objet que vous utilisez en Ruby est un literal. <br>
+                 Les literal créent les objets utilisés dans les programmes.</p>
+                  
+                <ul class="literals"><h3 class="list">Les types de literals en Ruby</h3>
+                    <li>Booléens</li>
+                    <li>Nombres</li>
+                    <li>chaines de caractères</li>
+                    <li>symboles</li>
+                    <li>Matrices</li>
+                    <li>Hashes</li>
+                    <li>Etendues</li>
+                    <li>RegEx</li>
+                    <li>Processus</li>
+                </ul> 
+            </article>
+          </section><br>
+          <hr>
+          <section class="main-section" id="Changer_pour_Ruby">
+            <header>Changer pour Ruby</header>
+            <article><p>
+                Si vous connaissez un autre langage (C/C++, JAVA,PERL, PHP ou encore Python), VOus pouvez aisément passer à ruby. <br>
+                Voici un exemple.
+                <p class="code"><code># en Python <br>
+                    if 0: <br>
+                      print("0 est vrai/true") <br>
+                    else: <br>
+                      print("0 est faux/false")</code></p>
+                  <p class="code"><code># en Ruby <br>
+                    if 0 <br>
+                      puts "0 est vrai/true" <br>
+                    else <br>
+                      puts "0 est faux/false" <br>
+                    end</code></p><br>
+            </article>    
+          </section>
+          <hr>
+          
+          <section class="main-section" id="Quelques_références" class="last">
+            <header>Quelques références</header>
+            <article> Pour en savoir plus rendez vous sur :
+                <ul><li><a href="www.ruby-lang.org/fr/">ruby-lang.com</a></li>
+                    <li><a href="https://www.w3resource.com/ruby/index.php">W3Resources</a></li>
+                </ul>
+             </article>
+          </section>
+          
+      </main>
+  </body>
+</html>

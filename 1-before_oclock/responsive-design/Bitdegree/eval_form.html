@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background: white;
+      }
+      input:empty {
+        background-color: palevioletred;
+      }
+      input:valid {
+        background-color: palegreen;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="#">
+      <label for="fname"
+        >First Name:
+        <input type="text" id="fname" name="fname" required autofocus />
+      </label>
+      <br /><br />
+      <label for="lname"
+        >Last Name:
+        <input type="text" id="lname" name="lname" required />
+      </label>
+      <br /><br />
+      <label for="passwd"
+        >Your password:
+        <input type="password" id="passwd" name="passwd" required />
+      </label>
+      <br /><br />
+      <label for="age"
+        >Age:
+        <input type="number" min="18" max="100" id="age" name="age" />
+      </label>
+      <br /><br />
+      <label for="gym"
+        >Gym:
+        <input
+          type="text"
+          id="gym"
+          name="gym"
+          readonly
+          value="Cross-Town Rd."
+        />
+      </label>
+      <br /><br />
+      <label for="img"
+        >Age:
+        <input type="file" id="img" accept="image/*.png" name="profil" />
+      </label>
+      <br /><br/>
+      <label for="diet">
+        Dietary needs:
+        <textarea id="diet" name="diet" cols="20" rows="3" placeholder="Put in your dietary needs" spellcheck="true"/></textarea>
+      </label>
+      <br /><br />
+      <label for="submit">
+        <input type="submit" id="submit" value="Submit" />
+      </label>
+      <br /><br />
+    </form>
+  </body>
+</html>

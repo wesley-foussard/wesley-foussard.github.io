@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+}
+
+.hero__text {
+  width: 60%;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 900;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.row {
+  /*display:flex => flex container*/
+  display: flex;
+  /*default= row*/
+  flex-direction: row;
+  /* pas encore utilisable partout à cause des navigateurs*/
+  /* gap:50px; */
+}
+.col {
+  width: 100%;
+  text-align: center;
+}
+h2 {
+  font-size: 36px;
+}
+
+.col + .col {
+  /* permet de sélectionner les éléments adjacents  */
+  /* ici, la première colonne n'a pas d'adjacent à gauche donc elle n'est ps sélectionnée*/
+  /* les 2èmes et 3èmes colonnes ont un précédent, 1èere et 2"me colonne resp. donc elles sont sélectionnées*/
+  /* background-color: limegreen; /*test */
+  margin-left: 30px;
+}
+/* .col +.col+.col {} agirait uniquement sur la 3 ème colonne, étant la seule à avoir 2 autres élémetns précédents*/
+.three_col h2 {
+  color: #87629a;
+}
+
+.two_col {
+  background-color: #136c72;
+  color: #fff;
+}

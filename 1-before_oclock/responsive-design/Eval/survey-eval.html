@@ -1,0 +1,66 @@
+<DOCTYPE html>
+<html>
+    <head>
+      <title> Survey Test </title>
+      <link rel='stylesheet' type='text/css' href='./survey-eval.css' />
+    </head>
+    <h1 id='title'>
+      Survey test</h1>
+    <p id='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et facilisis neque. </p>
+<form id='survey-form'>
+ 
+ <div type='identity'>
+  <label id='name-label'>what's your first name? <input required type='text' id='name' placeholder='Jean' /></label>
+  <label id='email-label'>what's your Email? <input required type='email' id='email' placeholder='test@gogolito.com'/></label>
+  <label id='number-label'>How old are you? <input required type='number' min=18 max='99' id='number' placeholder='years'/>years</label>
+  </div>
+  <div type='culture'>
+  <label id='drop'>
+    Who is your favorite doctor?
+    <select id='dropdown' required>
+      <option value='' ></option>
+      <option value='1'>William Hartnell</option>
+      <option value='2'>Peter Cushing</option>
+      <option value='3'>Patrick Troughton</option>
+      <option value='4'>Jon Pertwee</option>
+      <option value='5'>Tom Baker</option>
+      <option value='6'>Peter Davison</option>
+      <option value='7'>Colin Baker</option>
+      <option value='8'>Sylvester McCoy</option>
+      <option value='9'>Paul McGann</option>
+      <option value='10'>rowan Atkinson</option>
+      <option value='11'>Christopher Eccleston</option>
+      <option value='12'>David Tennant</option>
+      <option value='13'>Matt Smith</option>
+      <option value='14'>John Hurt</option>
+      <option value='15'>Peter Capaldi</option>
+      <option value='16'>David Bradley</option>
+      <option value='17'>Jodie Whittaker</option>
+      <option value='18'>Jo Martin</option>
+      </option>
+      </select>
+  </label>
+  <label>quel genre de musique ?</label>
+  <label id='radio'>
+    <input type='radio'checked name='musique'value='musique' />rock
+    <input type='radio' name='musique' value='musique'/>rap
+  </label>
+  <label>Que préferrez-vous manger? </label>
+  <label>sushi
+    <input type='checkbox' value="Sushi"/>
+  </label>
+  <label>Kebeb 
+    <input type='checkbox' value='kebab'/>
+  </label>
+  </div>
+  <div type='extra'>
+  <label>Une petite bio ? 
+    <textarea name="bio" rows="3" cols="30" placeholder="j'aime les nuggets en maillot de bain."></textarea>
+  </label>
+  </div>
+  <label type='submit'>
+    <button type="submit" id='submit'>Submit</button>
+  </label>
+</form>
+
+</html>

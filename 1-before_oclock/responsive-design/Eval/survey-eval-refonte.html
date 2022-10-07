@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="survey-eval-refonte.css">
+    <title>Survey-Eval</title>
+  </head>
+  <body>
+    <div class="titre">
+      <h1 id="title">Formulaire de renseignement</h1>
+      <p id="description" class="description">Apprenons à nous connaitre un peu plus.</p>
+    </div>
+    
+      <form id="survey-form">
+          
+        <section class="identity">
+          <p>Votre Identité</p>
+          <div class="reponses">
+            <div class="nom"><label for="first-name" > Votre prénom ? </label><input type="text" id="first-name" placeholder="Jean" required></div>
+            <div class="prénom"><label for="name"id="name-label">Votre nom ? </label><input type="text" id="name" placeholder="Dupond"required></div>
+            <div class="age"><label for="numbe"id="number-label">Votre âge ?<span class="petit">(optionnel)</span> </label>
+              <input type="number" placeholder="18" name="age" id="number" min="16"  max="150"/></div>
+          </div>
+    
+        </section>
+      <br class="inbetween">
+        <section class="contact">
+          <p>On peut échanger ?</p>
+          <div class="reponses">
+            <div class="email">
+              <label for="email" id="email-label">Votre Email ? 
+                <input type="email" id="email" placeholder="jean.dupond@mail.com" required></label>
+              </div>
+            <div class="téléphone">
+              <label for="phone">Votre numéro de téléphone ? 
+                <input type="tel" id="phone" pattern="[0]{1}[1-9]{9}"  placeholder="0123456789"></label>
+              </div>
+            <div class="choix">Quel mode de communication préférez vous? 
+              <label for="mail">
+                <input type="radio" name="choix" value="mail"/>Email</label>
+              <label for="telephone">
+                <input type="radio" name="choix" value="telephone"/>Téléphone</label>
+                <label for="rien">
+                  <input type="radio" name="choix" value="rien" /> pas de contact merci ^^</label></div> 
+          </div>
+            
+        </section>
+      <br class="inbetween">
+        <section class="motivation">
+          <div class="reponses">
+            <p>Pourquoi êtes-vous là ?</p>
+            <div class="motif">
+          Quel est le motif de votre visite ?
+            <label for="raison"><select name="motif" id="dropdown">
+              <option value=""></option>
+              <option value="1">par curiosité</option>
+              <option value="2">pour ma culture personnelle</option>
+              <option value="3">pour l'école</option>
+              <option value="4">pour le travail</option>
+            </div>
+          </div>
+          </select></label>
+        
+        
+        <div class="intérêts">
+          <div class="reponses">
+          Si vous êtes là par intérêt, que recherchez vous ?<br class="invisible">
+          <label for="tutos"><input type="checkbox" name="recherche" value="tutos" class="input-checkbox">Des tutos</label>
+          <label for="articles"><input type="checkbox" name="recherche" value="articles" class="input-checkbox">Des articles</label>
+          <label for="tests"><input type="checkbox" name="recherche" value="tests" class="input-checkbox">Des tests</label>
+          <label for="tout"><input type="checkbox" name="recherche" value="tout" class="input-checkbox">Un peu tout ?</label>
+        </div>
+      </div>
+        </section>
+      <br class="inbetween">
+        <section calss="comment">
+      <div class="text-area">
+        <p>Quelque chose à ajouter ?</p>
+        <label for="additionnel">
+          <textarea name="Commentaire" id="additionnel" class="input-textarea" cols="30" rows="10" placeholder="morbi quis commodo odio aenean..."></textarea></label>
+      </div>
+        </section>
+      <br>
+        <section class="validation">
+          <div class="submit">
+            <label for="submit"> 
+              <input type="submit" value="Soumettre" id="submit" class="button">
+            </label>
+          </div>
+        </section>
+      <br>
+      </form>
+    </div>
+  </body>
+</html>

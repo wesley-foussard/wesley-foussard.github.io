@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse-driven Inputs</title>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form action="/action_page.php">
+      <h1>This is a form with even more inputs!</h1>
+      <p>
+        Select your favorite ice-cream flavour:
+        <br />
+        <input type="radio" name="icecream" value="Vanilla" /> Vanilla
+        <input type="radio" name="icecream" value="choco" />
+        Chocolate
+        <input type="radio" name="icecream" value="strawberry" />
+        Strawberry
+      </p>
+
+      <p>
+        Please select all countries you’ve visited:
+        <br />
+        <input type="checkbox" name="countries" value="Italy" /> Italy
+        <input type="checkbox" name="countries" value="China" /> China
+        <input type="checkbox" name="countries" value="Puerto Rico" /> Puerto
+        Rico
+      </p>
+
+      <p>How do you watch movies?</p>
+      <select name="devices">
+        <option value="streaming">Streaming service</option>
+        <option value="TV">On TV</option>
+        <option value="cinema">At the cinema</option>
+      </select>
+
+      <p>How do you watch movies?</p>
+      <select name="devices" multiple="multiple">
+        <option value="streaming">Streaming service</option>
+        <option value="TV">On TV</option>
+        <option value="cinema">At the cinema</option>
+      </select>
+
+      <p>Upload your code example:</p>
+      <input type="file" name="code-example" />
+      <br />
+      <input type="submit" value="Upload" />
+
+      <p>Add any comments:</p>
+      <input type="text" name="comments" />
+      <input
+        type="image"
+        src="https://fe-academy-examples.s3.eu-north-1.amazonaws.com/addcomment.png"
+        width="50"
+        alt="comment photo"
+      />
+
+      <button>
+        <img
+          src="https://fe-academy-examples.s3.eu-north-1.amazonaws.com/plussign.png"
+          alt="add"
+          width="10"
+          height="10"
+        />
+        Add
+      </button>
+
+      <input type="reset" value="”reset”" />
+    </form>
+  </body>
+</html>
