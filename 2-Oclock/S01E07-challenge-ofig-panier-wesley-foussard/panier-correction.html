@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figurines</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style-correction.css" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title-container">
+        <h1 class="header__title">oFig</h1>
+        <h2 class="header__subtitle">Figurines et statuettes</h2>
+      </div>
+      <div class="header__theme-container">
+        <h2 class="header__theme-title">
+          Votre panier
+          <strong class="header__theme-title-franchise">2 produits</strong>
+        </h2>
+      </div>
+    </header>
+
+    <main class="container">
+      <form class="form">
+        <section class="cart-section">
+          <h2 class="cart-section__title">Votre panier</h2>
+          <table class="cart-products">
+            <thead class="cart-products__head">
+              <tr class="cart-products__head-line">
+                <th class="cart-products__head-item">Figurine</th>
+                <th class="cart-products__head-item">Prix unitaire</th>
+                <th class="cart-products__head-item">Quantité</th>
+              </tr>
+            </thead>
+            <tbody class="cart-products__body">
+              <tr class="cart-products__body-line">
+                <td class="cart-products__body-item">Cloud Strife</td>
+                <td class="cart-products__body-item">59 &euro;</td>
+                <td class="cart-products__body-item">
+                  <input
+                    class="cart-products__qty"
+                    type="number"
+                    name="qty[0]"
+                    min="0"
+                    value="1"
+                  />
+                  <a class="cart-products__remove-product" href="#"
+                    >supprimer</a
+                  >
+                </td>
+              </tr>
+              <tr class="cart-products__body-line">
+                <td class="cart-products__body-item">Tifa Lockhart</td>
+                <td class="cart-products__body-item">69 &euro;</td>
+                <td class="cart-products__body-item">
+                  <input
+                    class="cart-products__qty"
+                    type="number"
+                    name="qty[1]"
+                    min="0"
+                    value="1"
+                  />
+                  <a class="cart-products__remove-product" href="#"
+                    >supprimer</a
+                  >
+                </td>
+              </tr>
+              <tr class="cart-products__body-line">
+                <td class="cart-products__body-item">Barret Wallace</td>
+                <td class="cart-products__body-item">69 &euro;</td>
+                <td class="cart-products__body-item">
+                  <input
+                    class="cart-products__qty"
+                    type="number"
+                    name="qty[2]"
+                    min="0"
+                    value="1"
+                  />
+                  <a class="cart-products__remove-product" href="#"
+                    >supprimer</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+            <tfoot class="cart-products__foot">
+              <tr class="cart-products__foot-line">
+                <td class="cart-products__foot-item" colspan="2">
+                  Total de la commande :
+                </td>
+                <td
+                  class="cart-products__foot-item cart-products__foot-item--price"
+                >
+                  197 &euro;
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+        <section class="cart-section">
+          <!-- Préférences de livraison -->
+          <h3 class="cart-section__title">Préférences de livraison</h3>
+          <div class="cart-delivery">
+            <div>
+              <div class="cart-delivery__part">
+                <h4 class="cart-delivery__part-title">
+                  Où souhaitez-vous etre livré ?
+                </h4>
+                <!-- inputs -->
+                <div>
+                  <input
+                    class="form__radio"
+                    type="radio"
+                    value="current"
+                    name="addressSelection"
+                    id="currentAddress"
+                  />
+                  <label class="form__radio-label" for="currentAddress"
+                    >Mon adresse courante</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form__radio"
+                    type="radio"
+                    value="other"
+                    name="addressSelection"
+                    id="otherAddress"
+                    checked
+                  />
+                  <label class="form__radio-label" for="otherAddress"
+                    >Autre adresse</label
+                  >
+                </div>
+              </div>
+              <div class="cart-delivery__part">
+                <h4 class="cart-delivery__part-title">Options</h4>
+                <div>
+                  <input
+                    class="form__checkbox"
+                    type="checkbox"
+                    id="followBySms"
+                    name="sms"
+                    checked
+                  />
+                  <label class="form__checkbox-label" for="followBySms"
+                    >Suivi de livraison par sms (inclus)</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form__checkbox"
+                    type="checkbox"
+                    id="moneyBack"
+                    name="moneyBack"
+                  />
+                  <label class="form__checkbox-label" for="moneyBack"
+                    >Satisfait ou remboursé (+ 2 euros)</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form__checkbox"
+                    type="checkbox"
+                    id="care"
+                    name="care"
+                  />
+                  <label class="form__checkbox-label" for="care"
+                    >Garantie 2 ans (+ 10 euros)</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="cart-delivery__part">
+                <h4 class="cart-delivery__part-title">Adresse</h4>
+                <div>
+                  <label for="street" class="form__input-label">Rue</label>
+                  <input
+                    type="text"
+                    name="street"
+                    class="form__input"
+                    id="street"
+                  />
+                </div>
+                <div>
+                  <label for="zipCode" class="form__input-label"
+                    >Code postal</label
+                  >
+                  <input
+                    type="text"
+                    name="zipCode"
+                    maxlength="5"
+                    class="form__input"
+                    id="zipCode"
+                  />
+                </div>
+                <div>
+                  <label for="city" class="form__input-label">Ville</label>
+                  <input
+                    type="text"
+                    name="city"
+                    class="form__input"
+                    id="city"
+                  />
+                </div>
+              </div>
+              <div class="cart-delivery__part">
+                <h4 class="cart-delivery__part-title">
+                  Informations complémentaires
+                </h4>
+                <!-- inputs -->
+                <div>
+                  <label for="complement" class="form__input-label"
+                    >Interphone, b&acirc;timent, etc.</label
+                  >
+                  <textarea
+                    name="complement"
+                    id="complement"
+                    class="form__textarea"
+                    placeholder="Hello world"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cart-section">
+          <!-- Montant à régler -->
+          <div class="cart-total">
+            <span class="cart-total__label">Montant total à régler :</span>
+            <span class="cart-total__price">197 €</span>
+          </div>
+        </section>
+        <section class="cart-section hidden-print">
+          <!-- Boutons -->
+          <div class="cart-actions">
+            <button class="button" type="button">Continuer vos achats</button>
+            <button class="button button--red" type="submit">
+              Valider et payer
+            </button>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <footer class="footer">
+      oFig - toutes les images sont sous copyright SquareEnix
+    </footer>
+
+    <div class="fixed-sales">soldes</div>
+  </body>
+</html>
