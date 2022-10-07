@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap");
+
+body {
+  background: #eee;
+  font-family: "Asap", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-left: 250px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  float: left;
+  margin-left: -250px;
+  width: 250px;
+  background: #f5f5f5;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+}
+
+.search {
+  padding: 1rem;
+  background: #f39c12;
+}
+
+.search-input {
+  padding: 0.75rem 1rem;
+  border: none;
+  font-size: 1.2em;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 3px solid #f39c12;
+  padding-bottom: 1rem;
+}
+
+.nav {
+  padding: 2rem;
+  height: 100vh;
+  text-decoration: none;
+  /* background-color: #f5f5f5; */
+}
+
+.nav-links {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0 0;
+  text-transform: uppercase;
+}
+.nav-item-link {
+  text-decoration: none;
+  color: #111;
+}
+.nav-item {
+  font-size: 1.2rem;
+  list-style: none;
+  padding: 1rem 4rem 1rem 1rem;
+  background-color: #ddd;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+.nav-item:hover {
+  background-color: #f39c12;
+  transition: 300ms;
+}
+.nav-links:first-child {
+  box-shadow: 0 3px #f39c12;
+}
+
+.page {
+  padding: 5rem 2rem 2rem;
+}
+
+.content-focus {
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content-titles {
+  width: 50%;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 15%;
+  border-top: 2px solid #f39c12;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.content-title {
+  max-width: 450px;
+  text-align: right;
+  margin: 0 0 1rem 10%;
+  font-size: 2.5rem;
+}
+.content-title--sub {
+  color: #aaa;
+}
+
+.content-picture {
+  width: 50%;
+  position: relative;
+}
+
+.rounded {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.picture {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.picture-desc {
+  background-color: rgb(17, 17, 17);
+  opacity: 0.5;
+  padding: 0.8rem;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.content-quote {
+  border-top: 3px solid #ccc;
+  margin-top: 2rem;
+}
+
+.content p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.content h3 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content ol {
+  list-style-type: decimal;
+  font-size: 1.1em;
+  margin-left: 1.5em;
+  line-height: 1.5;
+}
+
+.articles {
+  margin-top: 5rem;
+}
+
+.articles-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin-bottom: 2rem;
+  width: 48%;
+}
+
+.card-title {
+  margin: 2rem 1rem;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 0 1rem;
+}
+
+.card-content p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.card-footer {
+  margin: 2rem 1rem;
+}
+
+.btn {
+  color: #f39c12;
+  border: 4px #f39c12 solid;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #f39c12;
+  transition: 300ms;
+  color: #fff;
+}
+.footer {
+  background: #111;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #aaa;
+}
+@media (max-width: 1200px) {
+  /*
+    Styles pour les écrans de moins de 1200px de large :
+*/
+
+  .content-focus {
+    display: block;
+  }
+
+  .content-titles {
+    width: auto;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .content-title {
+    max-width: none;
+  }
+
+  .content-picture {
+    width: auto;
+  }
+
+  .articles-container {
+    display: block;
+  }
+  .card {
+    width: auto;
+  }
+}
+@media (max-width: 900px) {
+  /*
+    Styles pour les écrans de moins de 900px de large :
+*/
+
+  .header {
+    position: static;
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    max-height: 175px;
+    margin-bottom: auto;
+    height: auto;
+  }
+
+  .container {
+    width: 96%;
+    padding-left: 0;
+  }
+
+  .page {
+    padding: 0 1rem;
+  }
+
+  .nav {
+    padding: 1rem;
+    margin-bottom: 1em;
+  }
+
+  .nav .title {
+    display: none;
+  }
+
+  .nav-links {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    width: calc(33.3333% - 0.5rem);
+    text-align: center;
+  }
+
+  .nav-item-link {
+    margin-bottom: 0;
+  }
+}
