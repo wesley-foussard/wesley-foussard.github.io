@@ -1,0 +1,35 @@
+body {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+body * {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plateau {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: blanchedalmond;
+  border: 1px solid burlywood;
+  justify-content: center;
+  padding: 1rem 0.75em;
+  gap: 0;
+}
+.paire,
+.impaire {
+  width: 100%;
+}
+.case {
+  width: 11.5%;
+  aspect-ratio: 1/1;
+  border: 1px solid burlywood;
+}
+.paire .case:nth-child(2n) {
+  background-color: burlywood;
+}
+.impaire .case:nth-child(2n + 1) {
+  background-color: burlywood;
+}
